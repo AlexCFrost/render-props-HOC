@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const implant = (WrappedComponent) => {
+const HigherOrder = (WrappedComponent) => {
   class Changed extends Component {
     constructor(props) {
       super(props);
@@ -29,4 +29,4 @@ const implant = (WrappedComponent) => {
   return Changed;
 };
 
-export default implant;
+export default HigherOrder;
