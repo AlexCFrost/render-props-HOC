@@ -11,7 +11,6 @@ function App() {
       <div className='buttons'>
         <Likes render = {(count, incrementCount)=> <LikeImage count = {count} incrementCount = {incrementCount}/>}/>
         <Likes render = {(count, incrementCount)=> <LikePost count = {count} incrementCount = {incrementCount}/>}/>
-        <HigherOrder/>
       </div>
     </div>
   );

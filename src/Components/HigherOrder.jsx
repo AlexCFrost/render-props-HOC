@@ -9,7 +9,7 @@ const HigherOrder = (WrappedComponent) => {
       };
     }
 
-    handlePostCount = () => {
+    handlePost = () => {
       this.setState((prevState) => ({
         likePost: prevState.likePost + 1,
       }));
@@ -19,7 +19,7 @@ const HigherOrder = (WrappedComponent) => {
       return (
         <WrappedComponent
           likePost={this.state.likePost}
-          handlePostCount={this.handlePostCount}
+          handlePost={this.handlePost}
           {...this.props}
         />
       );
